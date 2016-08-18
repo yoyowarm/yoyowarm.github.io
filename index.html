@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="yoyo design,網頁設計,UI,前端,切版,平面設計,視覺設計,響應式網站,外包,接案,作品集網站,個人作品集,freelancer,psd to html,RWD" />
+    <meta name="description" content="yo-ah-yo design" />
+    <meta property="og:title" content="yo-ah-yo design" />
+    <meta property="og:type" content="web design" />
+    <meta property="og:url" content="http://www.yoyowarm.com/" />
+    <meta property="og:image" content="http://www.yoyowarm.com/img/logolg-01.png">
+    <meta property="og:locale" content="zh_TW" />
+    <title>YO-AH-YO web design & visual design</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="nprogress-master/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.6.3/font-awesome.min.css">
+    <link rel="icon" href="img/yo-01.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="nprogress-master/nprogress.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/instafeed.js"></script>
+    <!--  <script>
+    var x;
+    $(document).ready(function() {
+
+        $(window).resize(function() {
+            
+            x = $(window).width();
+            if (x > 970) {
+                $(".container").addClass('header');
+            } else {
+                $(".container").removeClass("header")
+            }
+        });
+    });
+    </script>
+    <script>
+    $(function() {
+        var shrinkHeader = 1000;
+        $(window).scroll(function() {
+            var scroll = getCurrentScroll();
+            if (scroll >= shrinkHeader) {
+                $('.header').addClass('shrink');
+            } else {
+                $('.header').removeClass('shrink');
+            }
+        });
+
+        function getCurrentScroll() {
+            return window.pageYOffset || document.documentElement.scrollTop;
+        }
+    });
+    </script>
+    <script>
+    $(function() {
+
+        $(window).scroll(function() {
+
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 560) {
+
+                $(".scroll").css({"background-position": "50% 0%"});
+
+            } else {
+
+                 $(".scroll").css({"background-position": "50% 50%"});
+
+            }
+
+        });
+
+    })
+    </script>-->
+    <script>
+    $(document).ready(function() {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".nav a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    })
+    </script>
+    <script type="text/javascript">
+    $(function() {
+        $(".work").click(function() {
+            NProgress.start();
+            NProgress.done();
+        });
+    });
+    </script>
+    <script>
+    $(function() {
+
+        $(window).scroll(function() {
+
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 560) {
+
+                $(".navbar-scroll").addClass("navbar-fixed-top");
+
+            } else {
+
+                $(".navbar-scroll").removeClass("navbar-fixed-top")
+
+            }
+
+        });
+
+    })
+    </script>
+    <script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '1410287458',
+        accessToken: '1410287458.1677ed0.6857c253ad744c9d913aec9f3d56da48'
+    });
+    userFeed.run();
+
+    function myFunction() {
+        userFeed.next();
+    }
+    </script>
+</head>
+
+<body data-spy="scroll">
+    <div class="container" id="top">
+        <nav class="hidden-xs navbar-scroll">
+            <div class="container-fluid col-xs-12">
+                <div class="collapse navbar-collapse" style="float: right;margin-right:-50px;margin-top:25px  ">
+                    <ul class="nav navbar-nav nav-float nav-text ">
+                        <li><a href="#top" class="code-font ">Top</a></li>
+                        <li><a href="#work" class="code-font ">Work</a></li>
+                        <li><a href="#about" class="code-font ">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--top nav-->
+        <nav class="navbar navbar-default visible-xs navbar-fixed-top top-nav-collapse">
+            <div class="container-fluid col-xs-12">
+                <div class="navbar-header" align="">
+                    <button type="botton" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#"><img src="img/logolg-xs-02.png" alt="yo-au-yo" width="150px"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar" aria-expanded="false">
+                    <ul class="nav navbar-nav nav-float nav-text mdb-nav">
+                        <li><a href="#top" class="code-font ">Top</a></li>
+                        <li><a href="#work" class="code-font ">Work</a></li>
+                        <li><a href="#about" class="code-font ">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div align="center" class="logo">
+            <img src="img/logolg-01.png" class="visible-lg visible-md visible-sm " alt="yoauyo" width="550px">
+            <div class="code-font title-t visible-xs">YO AH YO</div>
+            <div align="center" class="code-font subject-t">web design & visual design</div>
+            <div class="code-font" align="center">
+                <div style="width: 52% ;text-align: left; margin-top: 15px">
+                    <div class="subject-p col-lg-4 col-sm-6">#coffee lover</div>
+                    <div class="subject-p col-lg-4 col-sm-6">#Mac user</div>
+                    <div class="subject-p col-lg-4 col-sm-6">#freelancer</div>
+                    <div class="subject-p col-lg-4 col-sm-6">#make dessert</div>
+                    <div class="subject-p col-lg-4 col-sm-6">#take picture</div>
+                </div>
+            </div>
+            <div class="page-scroll col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar-brand" align="center">
+                <img src="img/page-scall-02.png" height="20px" alt="scall" />
+            </div>
+        </div>
+        <div class="ind_work">
+            <div id="work" style="height: 20px"></div>
+            <a id="myBtn">
+                <div class="work_grid col-md-6 col-sm-12 col-xs-12 ">
+                    <div class="work">
+                        <div class="work_content">
+                            <span class="work_title">pattern</span>
+                            <h1 class="work_h1">2014年度花色開發</h1>
+                            <p class="work_p">上市於2015年夏季</p>
+                        </div>
+                        <div class="work_cover ">
+                            <div class="work_linear" style="background: linear-gradient(100deg, rgba(89,164,255,1) 0%,rgba(108,175,243,0.26) 52%,rgba(125,185,232,0.98) 99%,rgba(125,185,232,1) 100%); height: 400px;"></div>
+                        </div>
+                        <div class="work_img scroll" id="work_1" align="center">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a id="myBtn02">
+                <div class="work_grid col-md-6 col-sm-12 col-xs-12">
+                    <div class="work">
+                        <div class="work_content">
+                            <span class="work_title">Graphic design</span>
+                            <h1 class="work_h1">viro 家飾品牌</h1>
+                            <p class="work_p">主要通路hola</p>
+                        </div>
+                        <div class="work_cover ">
+                            <div style="background: linear-gradient(135deg, rgba(219,170,111,1) 15%,rgba(219,170,111,0.77) 27%,rgba(193,143,84,0.21) 56%,rgba(167,115,56,1) 85%,rgba(153,101,42,1) 100%); height: 400px; "></div>
+                        </div>
+                        <div style="height: 400px; width: 100%;">
+                            <div class=" scroll" id="work_2" align="center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a id="myBtn03">
+                <div class="work_grid col-md-6 col-sm-12 col-xs-12">
+                    <div class="work">
+                        <div class="work_content">
+                            <span class="work_title">logo</span>
+                            <h1 class="work_h1">logotype</h1>
+                        </div>
+                        <div class="work_cover ">
+                            <div style="background: linear-gradient(130deg, rgba(0,60,114,1) 0%,rgba(0,60,114,1) 10%,rgba(0,60,114,0.26) 52%,rgba(0,60,114,1) 92%,rgba(0,60,114,1) 99%); height: 400px;">
+                            </div>
+                        </div>
+                        <div class="work_img scroll" id="work_3" align="center">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a id="myBtn04">
+                <div class="work_grid col-md-6 col-sm-12 col-xs-12">
+                    <div class="work">
+                        <div class="work_content">
+                            <span class="work_title">web design</span>
+                            <h1 class="work_h1">網頁設計</h1>
+                        </div>
+                        <div class="work_cover ">
+                            <div style="background: linear-gradient(130deg, rgba(66,63,76,1) 8%,rgba(65,63,77,1) 18%,rgba(63,63,80,0.21) 48%,rgba(61,64,82,1) 79%,rgba(60,64,84,1) 100%); height: 400px;">
+                            </div>
+                        </div>
+                        <div class="work_img scroll" id="work_4" align="center">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a id="myBtn05">
+                <div class="work_grid col-md-6 col-sm-12 col-xs-12">
+                    <div class="work">
+                        <div class="work_content">
+                            <span class="work_title" style="color: #575757">app UI</span>
+                            <h1 class="work_h1" style="color: #575757">andromoney</h1>
+                            <p class="work_p" style="color: #575757">UI改版</p>
+                        </div>
+                        <div class="work_cover ">
+                            <div style="background: linear-gradient(135deg,rgba(207,255,255,1) 0%,rgba(206,254,255,1) 1%,rgba(167,227,247,0) 40%,rgba(155,219,245,0) 52%,rgba(143,211,242,0) 64%,rgba(108,186,235,0.97) 99%,rgba(108,186,235,1) 100%); height: 400px;"></div>
+                        </div>
+                        <div class="work_img scroll" id="work_5" align="center">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a id="myBtn06">
+                <div class="work_grid col-md-6 col-sm-12 col-xs-12">
+                    <div class="work">
+                        <div class="work_content">
+                            <span class="work_title" style="color: #2e2e2e">photo</span>
+                            <h1 class="work_h1" style="color: #2e2e2e">記錄生活</h1>
+                            <p class="work_p" style="color: #2e2e2e">＃拍照攝影＃生活雜記</p>
+                        </div>
+                        <div class="work_cover " style="padding-top: 25px">
+                            <div style="background: linear-gradient(135deg, rgba(90,150,150,1) 1%,rgba(90,150,150,0.95) 4%,rgba(161,204,204,0.21) 53%,rgba(230,255,255,1) 100%); height: 320px;width: 320px;margin: auto; border-radius: 100%"></div>
+                        </div>
+                        <div style="height: 400px; width: 100%;padding-top: 25px">
+                            <div class="scroll" id="work_6" align="center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="project_head " style="">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="project_title">2014年度花色開發</h2>
+                    <p class="project_p">上市於2015夏季</p>
+                    <p class="project_p">#pattern</p>
+                </div>
+                <div class="project_body">
+                    <div align="center">
+                        <div style="margin: 40px" class="pattern_img">
+                            <div class="work_content_p">
+                                <p>為一家生產竹席床墊的傳產公司，設計年度新花色，拋去過往購買現成花色，重新設計針對購買客群，產出符合時下色彩形象的花色_</p>
+                            </div>
+                            <div align="left" style="margin-top: 20px"><span class="work_name">布花名稱:swimmimg pool游泳池</span></div>
+                            <img width="100%" src="img/work/pattern/simming_pool-01.jpg" alt="swimming pool">
+                            <img width="100%" src="img/work/pattern/outdoor-swimming-pool-01.jpg" alt="swimming-pool野餐墊">
+                            <div align="left" style="margin-top: 20px"><span class="work_name">布花名稱:城武大拇哥</span></div>
+                            <img width="100%" src="img/work/pattern/Shirotake.jpg" alt="城武大拇哥">
+                            <img width="100%" src="img/work/pattern/3d_room04.jpg" alt="城武床墊＆和式房間">
+                            <div align="left" style="margin-top: 20px"><span class="work_name">布花名稱:bopomo</span></div>
+                            <img width="100%" src="img/work/pattern/bopomo(AB).jpg" alt="bopomo">
+                            <img width="100%" src="img/work/pattern/ROFN-bopomo.jpg" alt="bopomo便利墊">
+                            <div align="left" style="margin-top: 20px"><span class="work_name">3D建模床墊展示</span></div>
+                            <img width="100%" src="img/work/pattern/3d_room.jpg" alt="2015新布花3d房間">
+                            <img width="100%" src="img/work/pattern/3d_room02.jpg" alt="2015新布花3d房間">
+                            <img width="100%" src="img/work/pattern/3d_room03.jpg" alt="2015新布花3d房間">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal02" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="project_head ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="project_title">viro 家飾品牌</h2>
+                    <p class="project_p">主要通路hola</p>
+                    <p class="project_p">#graphic design</p>
+                </div>
+                <div class="project_body">
+                    <div align="center">
+                        <div style="margin: 20px">
+                            <img width="60%" src="img/work/viro/viro_logo.jpg" alt="viro logo">
+                            <img width="60%" src="img/work/viro/viro-living.jpg" alt="礫窩家居">
+                            <div style="border-bottom: 1px dashed #adadad;width: 90%; margin: 40px" align="center"></div>
+                            <div align="left" style="margin-top: 20px; margin-left: 30px"><span class="work_name">商品卡</span></div>
+                            <img width="70%" src="img/work/viro/Product_Card01.jpg" alt="Product Card">
+                            <img width="70%" src="img/work/viro/Product_Card02.jpg" alt="Product Card">
+                            <div style="border-bottom: 1px dashed #adadad;width: 90%; margin: 40px" align="center"></div>
+                            <div align="left" style="margin-top: 20px; margin-left: 30px"><span class="work_name">2015專案商品卡</span></div>
+                            <div><img width="50%" src="img/work/viro/三角枕.png" alt="三角枕">
+                                <img width="30%" style="margin-bottom: 50px" src="img/work/viro/淳風麻將三角立體靠枕商品卡.png" alt="淳風麻將三角立體靠枕商品卡"></div>
+                            <div>
+                                <img width="50%" src="img/work/viro/三角枕與連續坐墊.png" alt="三角枕與連續坐墊">
+                                <img width="30%" src="img/work/viro/淳風麻將連續式座墊商品卡.png" alt="淳風麻將連續式座墊商品卡">
+                            </div>
+                            <div>
+                                <img width="50%" src="img/work/viro/立體坐墊.png" alt="立體坐墊.png">
+                                <img width="30%" src="img/work/viro/淳風麻將立體座墊商品卡.png" alt="淳風麻將立體座墊商品卡">
+                            </div>
+                            <div>
+                                <img width="50%" src="img/work/viro/枕片2.png" alt="枕片2">
+                                <img width="30%" src="img/work/viro/淳風麻將枕套商品卡.png" alt="淳風麻將枕套商品卡">
+                            </div>
+                            <div>
+                                <img width="50%" src="img/work/viro/單人蓆2.png" alt="單人蓆">
+                                <img width="30%" src="img/work/viro/淳風麻將可拆式涼蓆商品卡.png" alt="風麻將可拆式涼蓆商品卡">
+                            </div>
+                            <div style="border-bottom: 1px dashed #adadad;width: 90%; margin: 60px" align="center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal03" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="project_head ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="project_title">logotype</h2>
+                    <p class="project_p"></p>
+                    <p class="project_p">#logo</p>
+                </div>
+                <div class="project_body">
+                    <div align="center">
+                        <div style="margin-top: 200px">
+                            <img width="35%" src="img/work/logo/li-yu-zu.jpg" alt="liyuzu_logo">
+                        </div>
+                        <div class="logo_content">
+                            <img width="50%" src="img/work/logo/yoahyo-01.jpg" alt="yoahyo webdesign">
+                        </div>
+                        <div class="logo_content">
+                            <img width="50%" src="img/work/logo/loofah-01.jpg" alt="在地籽">
+                        </div>
+                        <div class="logo_content">
+                            <img width="40%" src="img/work/logo/dumplings-01.jpg" alt="手工水餃">
+                        </div>
+                        <div class="logo_content" style="background: #e95535;padding: 80px;">
+                            <img style="margin-top: 40px" width="60%" src="img/work/logo/butchers03-01.png" alt="良物肉舖子01">
+                        </div>
+                        <div class="logo_content">
+                            <img width="25%" src="img/work/logo/butchers02-01.png" alt="良物肉舖子02">
+                        </div>
+                        <div class="logo_content" style="background: #e95535;padding: 50px;">
+                            <img width="25%" src="img/work/logo/butchers01-01.png" alt="良物肉舖子03">
+                        </div>
+                        <div class="logo_content">
+                            <img width="88%" src="img/work/logo/kowloon-01.png" alt="九龍皇帝字">
+                        </div>
+                        <div class="logo_content">
+                            <img width="88%" src="img/work/logo/kowloon02-01.png" alt="九龍皇帝字">
+                        </div>
+                        <div style="margin-bottom: 100px"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal04" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="project_head ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="project_title">網頁設計</h2>
+                    <p class="project_p"></p>
+                    <p class="project_p">#web design</p>
+                </div>
+                <div class="project_body">
+                    <div align="center">
+                        <div align="left" style="margin-top: 20px; margin-left: 30px"><span class="work_name">茂盛公司官網設計</span></div>
+                        <div style="margin: 30px">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img width="70%" style="box-shadow: 1px 1px 15px #656565" src="img/work/web/茂盛版型-01.jpg" alt="茂盛官網設計">
+                                    </div>
+                                    <div class="item">
+                                        <img width="70%" style="box-shadow: 1px 1px 15px #656565" src="img/work/web/茂盛網站版型-01.jpg" alt="茂盛官網設計">
+                                    </div>
+                                </div>
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div align="left" style="margin-top: 20px; margin-left: 30px"><span class="work_name">菲夢麗彈簧床官網設計</span></div>
+                        <div style="margin: 30px">
+                            <div id="myCarousel02" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel02" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel02" data-slide-to="1"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img width="70%" style="box-shadow: 1px 1px 15px #656565" src="img/work/web/網站版型-01.jpg" alt="菲夢麗彈簧床官網設計">
+                                    </div>
+                                    <div class="item">
+                                        <img width="70%" style="box-shadow: 1px 1px 15px #656565" src="img/work/web/網站版型-02.jpg" alt="菲夢麗彈簧床官網設計">
+                                    </div>
+                                </div>
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel02" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel02" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div align="left" style="margin-top: 20px; margin-left: 30px"><span class="work_name">一擊運動分析網</span></div>
+                            <div style="margin: 30px">
+                                <img width="88%" src="img/work/web/一擊.png" alt="一擊運動分析網">
+                            </div>
+                            <div align="left" style="margin-top: 20px; margin-left: 30px"><span class="work_name">布魯克運動分析網</span></div>
+                            <div style="margin: 30px">
+                                <img width="88%" src="img/work/web/布魯克.png" alt="布魯克運動分析網">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal05" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="project_head ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="project_title">andromoney</h2>
+                    <p class="project_p">UI 改版</p>
+                    <p class="project_p">#app UI</p>
+                </div>
+                <div class="project_body">
+                    <div align="center">
+                        <div style="margin:10px">
+                            <img width="90%" src="img/work/UI/andromoney_1-01.jpg" alt="記帳app">
+                            <img style="margin-top: -2px" width="90%" src="img/work/UI/andromoney_2-01.jpg" alt="記帳app">
+                            <img style="margin-top: -2px" width="90%" src="img/work/UI/andromoney_3-01.jpg" alt="記帳app">
+                            <img style="margin-top: -2px" width="90%" src="img/work/UI/andromoney_4-01.jpg" alt="記帳app">
+                            <img style="margin-top: -2px" width="90%" src="img/work/UI/andromoney_5-01.jpg" alt="記帳app">
+                            <img style="margin-top: -2px" width="90%" src="img/work/UI/andromoney_6-01.jpg" alt="記帳app">
+                            <img style="margin-top: -2px" width="90%" src="img/work/UI/andromoney_7-01.jpg" alt="記帳app">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal06" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="project_head ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="project_title">記錄生活</h2>
+                    <p class="project_p">拍照攝影生活雜記</p>
+                    <p class="project_p">#photograph</p>
+                </div>
+                <div class="project_body">
+                    <div align="center">
+                        <div style="margin: 30px">
+                            <div id="instafeed"></div>
+                            <div>
+                                <button onclick="myFunction()" class="ig_more">載入更多內容</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about " style="visibility: visible;" id="about">
+        <div align="center" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img width="160px" src="img/yuzu-01.png" alt="yuzu">
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 about_list">
+            <ul class="code-font" style="text-align: left">
+                <li>Yu-Zu Li</li>
+                <li>1991/Kaohsiung </li>
+                <li>designer, developer </li>
+                <li>skill:</li>
+                <li><span class="skill">html5</span><span class="skill">css3</span><span class="skill">jquery</span></li>
+                <li><span class="skill">ai</span><span class="skill">ps</span><span class="skill">premiere</span> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content col-lg-12 col-md-12 col-xs-12" align="center">
+    <div class="code-font" style="font-size: 25px">Contact me via email</div>
+    <div align="center" style="color: #999;line-height:40px; font-size: 14px; margin-bottom: 30px">網頁設計、平面設計、logo設計，請與我聯絡</div>
+    <div><a href="mailto:po8867@gmail.com" class="button" style="text-decoration:none"> EMAIL ME </a></div>
+
+    </div>
+<div class="footer col-lg-12 col-md-12 col-xs-12" align="center">Yu-Zu Li © 2016</div>
+    <script>
+    $(document).ready(function() {
+        $("#myBtn").click(function() {
+            $("#myModal").modal();
+        });
+        $("#myBtn02").click(function() {
+            $("#myModal02").modal();
+        });
+        $("#myBtn03").click(function() {
+            $("#myModal03").modal();
+        });
+        $("#myBtn04").click(function() {
+            $("#myModal04").modal();
+        });
+        $("#myBtn05").click(function() {
+            $("#myModal05").modal();
+        });
+        $("#myBtn06").click(function() {
+            $("#myModal06").modal();
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+@font-face {
+    font-family: "source-code-pro-light";
+    src: url(../font/SourceCodePro-Light.ttf);
+}
+
+::selection {
+    background: #ababab;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #ababab;
+    color: #fff;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+.code-font {
+    font-family: source-code-pro-light, Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+
+.nav-text {
+    font-size: 20px;
+}
+
+.nav-float {
+    text-align: center;
+}
+
+.top-nav-collapse {
+    background-color: #fff;
+    margin-top: 0
+}
+
+.logo {
+    margin: 15px;
+    margin-top: 200px;
+}
+
+.subject-t {
+    font-size: 32px;
+    font-weight: lighter;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.title-t {
+    font-size: 65px;
+    font-weight: 900;
+    border-bottom: 1px #000 solid;
+    margin-bottom: 20px
+}
+
+.subject-p {
+    font-size: 18px;
+    color: #969696;
+    line-height: 30px;
+}
+
+.mdb-nav {
+    background-color: #f7f7f7;
+    box-shadow: 0px 1px 7px #ababab;
+}
+
+.mdb-nav li>a {
+    padding: 16px;
+}
+
+.mdb-nav:hover {
+    background-color: #e5e5e5
+}
+
+.page-scroll {
+    margin: 30px 0;
+}
+
+.navbar-brand {
+    animation: mymove 1.5s infinite;
+    -webkit-animation: mymove 1.5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    0% {
+        top: 0
+    }
+    50% {
+        top: 30px
+    }
+    100% {
+        top: 0
+    }
+}
+
+@keyframes mymove {
+    0% {
+        top: 0
+    }
+    50% {
+        top: 30px
+    }
+    100% {
+        top: 0
+    }
+}
+
+@media (min-width: 0px) {
+    .ind_work {
+        margin-top: 160px
+    }
+}
+
+@media (min-width: 768px) {
+    .ind_work {
+        margin-top: 260px
+    }
+}
+
+@media (min-width: 992px) {
+    .ind_work {
+        margin-top: 260px
+    }
+}
+
+@media (min-width: 1200px) {
+    .ind_work {
+        margin-top: 260px
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 750px;
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-dialog {
+        width: 1000px;
+        margin: 30px auto;
+    }
+}
+
+.work {
+    position: relative;
+    cursor: pointer;
+    widows: 100%;
+}
+
+.work:hover .work_cover {
+    opacity: 1;
+}
+
+.work_grid {
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.work_content {
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 20px;
+    z-index: 5
+}
+
+.work_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 400%;
+}
+
+#work_1 {
+    background-image: url(../img/work/pattern_1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 400px;
+    transition: all 0.5s
+}
+
+#work_2 {
+    background-image: url(../img/work/viro_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 400px;
+    transition: all 0.5s
+}
+
+#work_3 {
+    background-image: url(../img/work/HK_night.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 400px;
+    transition: all 0.5s
+}
+
+#work_4 {
+    background-image: url(../img/work/code.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 400px;
+    transition: all 0.5s
+}
+
+#work_5 {
+    background-image: url(../img/work/appUI.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 400px;
+    transition: all 0.5s
+}
+
+#work_6 {
+    background-image: url(../img/work/ig_cover.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    margin: auto;
+    transition: all 0.5s
+}
+
+.work_cover {
+    position: absolute;
+    padding-left: 0;
+    padding-top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 3
+}
+
+.work_title {
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.work_h1 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 0px
+}
+
+.work_p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff
+}
+
+.work_content_p {
+    font-size: 14px;
+    color: #6f6f6f;
+    line-height: 20px;
+    margin: 20px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.work_name {
+    font-size: 14px;
+    color: gray;
+    padding: 3px;
+    left: 15px;
+    letter-spacing: 2px
+}
+
+.project_head {
+    height: 135px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 3px 3px 0 0;
+    border-top: 1px solid #fff;
+}
+
+.project_title {
+    font-size: 28px;
+    line-height: 38px;
+    color: #262626;
+    font-weight: 200;
+}
+
+.project_p {
+    font-size: 14px;
+    color: gray;
+    line-height: 22px
+}
+
+.project_body {
+    background-color: #fff;
+}
+
+.about {
+    margin: 0 auto;
+    width: 78%;
+    height: 350px;
+    padding: 35px;
+    margin-top: 150px
+}
+
+.about_list {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 40px
+}
+.skill {
+    color: #eee;
+    background: #808080;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 10px
+
+}
+.navbar-scroll {
+    float: right;
+    margin-right: -50px;
+    margin-top: 10px
+}
+
+
+/*也是針對想要的畫面做修正*/
+
+.navbar-scroll.navbar-fixed-top {
+    padding: 0px 0;
+    margin-right: 60px;
+}
+
+.navbar-scroll.navbar-fixed-top>div ul {
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #ababab;
+}
+
+
+/*.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    line-height:160px;
+
+}*/
+
+.header.shrink {
+    height: 100px;
+    line-height: 80px;
+    width: 90%;
+    margin-left: 80px
+}
+
+.content {
+    margin-top: 20px;
+    height: 200px;
+    /*just to get the page to scroll*/
+}
+
+.ig_more {
+    color: #413d3c;
+    border: 1px solid #413d3c;
+    border-radius: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    background: #fff;
+    width: 130px;
+    height: 130px;
+    font-weight: 500;
+    transition: all 0.5s
+}
+
+.ig_more:hover {
+    color: #5a9696;
+    border: 1px solid #5a9696;
+}
+
+#instafeed img {
+    width: 190px;
+    height: 190px
+}
+
+.pattern_img img {
+    padding: 8px
+}
+
+.logo_content {
+    margin-top: 350px;
+}
+.button {
+
+    color: black;
+    background: linear-gradient(45deg, rgba(153,255,255,1) 0%,rgba(241,255,48,1) 100%);
+  font-weight: 900;
+    padding: 1em 4em;
+    margin-top:60px;
+    width: auto;
+    letter-spacing:  0.04em;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration:none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 13px;
+    transition: all 0.3s;
+}
+.button:hover {
+    background: #413d3c;
+    color: #fff;
+    
+}
+.footer {
+    height: 60px;
+    line-height: 60px;
+    font-weight: 900;
+    color: black;
+    font-size: 12px
+}
