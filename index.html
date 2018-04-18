@@ -9,9 +9,9 @@
     <meta property="og:title" content="yo-ah-yo design" />
     <meta property="og:type" content="web design" />
     <meta property="og:url" content="http://www.yoyowarm.com/" />
-    <meta property="og:image" content="http://www.yoyowarm.com/img/logolg-01.png">
+    <meta property="og:image" content="../img/logolg-01.png">
     <meta property="og:locale" content="zh_TW" />
-    <title>YO-AH-YO web design & visual design</title>
+    <title> web design & visual design</title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -78,82 +78,86 @@
     })
     </script>-->
     <script>
-    $(document).ready(function() {
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".nav a").on('click', function(event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
+        $(document).ready(function() {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".nav a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-                // Store hash
-                var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
 
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    })
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
     </script>
     <script type="text/javascript">
-    $(function() {
-        $(".work").click(function() {
-            NProgress.start();
-            NProgress.done();
+        $(function() {
+            $(".work").click(function() {
+                NProgress.start();
+                NProgress.done();
+            });
         });
-    });
     </script>
     <script>
-    $(function() {
+        $(function() {
 
-        $(window).scroll(function() {
+            $(window).scroll(function() {
 
-            var scroll = $(window).scrollTop();
+                var scroll = $(window).scrollTop();
 
-            if (scroll >= 560) {
+                if (scroll >= 560) {
 
-                $(".navbar-scroll").addClass("navbar-fixed-top");
+                    $(".navbar-scroll").addClass("navbar-fixed-top");
 
-            } else {
+                } else {
 
-                $(".navbar-scroll").removeClass("navbar-fixed-top")
+                    $(".navbar-scroll").removeClass("navbar-fixed-top")
 
-            }
+                }
 
-        });
+            });
 
-    })
+        })
     </script>
     <script type="text/javascript">
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: '1410287458',
-        accessToken: '1410287458.1677ed0.6857c253ad744c9d913aec9f3d56da48'
-    });
-    userFeed.run();
+        var userFeed = new Instafeed({
+            get: 'user',
+            userId: '1410287458',
+            accessToken: '1410287458.1677ed0.6857c253ad744c9d913aec9f3d56da48'
+        });
+        userFeed.run();
 
-    function myFunction() {
-        userFeed.next();
-    }
+        function myFunction() {
+            userFeed.next();
+        }
     </script>
 </head>
 
 <body data-spy="scroll">
     <div class="container" id="top">
         <nav class="hidden-xs navbar-scroll">
-            <div class="container-fluid col-xs-12">
-                <div class="collapse navbar-collapse" style="float: right;margin-right:-50px;margin-top:25px  ">
+            <div class=" col-xs-4">
+                <a href="#"><img src="img/logo.svg" alt="yo-au-yo" width="115px"></a>
+                <div class="code-font">front-end developer & web design</div>
+            </div>
+            <div class="container-fluid col-xs-8">
+                <div class="collapse navbar-collapse" style="float: right;/*margin-right:-50px;margin-top:25px */ ">
                     <ul class="nav navbar-nav nav-float nav-text ">
-                        <li><a href="#top" class="code-font ">Top</a></li>
-                        <li><a href="#work" class="code-font ">Work</a></li>
-                        <li><a href="#about" class="code-font ">About</a></li>
+                        <li><a href="#top" style="font-weight: 300;font-size: 16px">首頁</a></li>
+                        <li><a href="#work" style="font-weight: 300;font-size: 16px">作品案例</a></li>
+                        <li><a href="#about" style="font-weight: 300;font-size: 16px">關於我</a></li>
                     </ul>
                 </div>
             </div>
@@ -178,19 +182,11 @@
                 </div>
             </div>
         </nav>
+
         <div align="center" class="logo">
-            <img src="img/logolg-01.png" class="visible-lg visible-md visible-sm " alt="yoauyo" width="550px">
             <div class="code-font title-t visible-xs">YO AH YO</div>
-            <div align="center" class="code-font subject-t">web design & visual design</div>
-            <div class="code-font" align="center">
-                <div style="width: 52% ;text-align: left; margin-top: 15px">
-                    <div class="subject-p col-lg-4 col-sm-6">#coffee lover</div>
-                    <div class="subject-p col-lg-4 col-sm-6">#Mac user</div>
-                    <div class="subject-p col-lg-4 col-sm-6">#freelancer</div>
-                    <div class="subject-p col-lg-4 col-sm-6">#make dessert</div>
-                    <div class="subject-p col-lg-4 col-sm-6">#take picture</div>
-                </div>
-            </div>
+            <div align="center" class="code-font subject-t visible-xs">web design & visual design</div>
+
             <div class="page-scroll col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar-brand" align="center">
                 <img src="img/page-scall-02.png" height="20px" alt="scall" />
             </div>
@@ -202,8 +198,8 @@
                     <div class="work">
                         <div class="work_content">
                             <span class="work_title">pattern</span>
-                            <h1 class="work_h1">2014年度花色開發</h1>
-                            <p class="work_p">上市於2015年夏季</p>
+                            <h1 class="work_h1">年度花色開發</h1>
+                            <p class="work_p">上市於夏季</p>
                         </div>
                         <div class="work_cover ">
                             <div class="work_linear" style="background: linear-gradient(100deg, rgba(89,164,255,1) 0%,rgba(108,175,243,0.26) 52%,rgba(125,185,232,0.98) 99%,rgba(125,185,232,1) 100%); height: 400px;"></div>
@@ -302,7 +298,7 @@
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="project_head " style="">
+                <div class="project_head ">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h2 class="project_title">2014年度花色開發</h2>
                     <p class="project_p">上市於2015夏季</p>
@@ -367,7 +363,7 @@
                                 <img width="50%" src="img/work/viro/04.png" alt="枕片2">
                                 <img width="30%" src="img/work/viro/08.png" alt="淳風麻將枕套商品卡">
                             </div>
-                            
+
                             <div style="border-bottom: 1px dashed #adadad;width: 90%; margin: 60px" align="center"></div>
                         </div>
                     </div>
@@ -554,41 +550,43 @@
             <ul class="code-font" style="text-align: left">
                 <li>Yu-Zu Li</li>
                 <li>1991/Kaohsiung </li>
-                <li>designer, developer </li>
+                <li>front-end developer , web design </li>
                 <li>skill:</li>
-                <li><span class="skill">html5</span><span class="skill">css3</span><span class="skill">jquery</span></li>
-                <li><span class="skill">ai</span><span class="skill">ps</span><span class="skill">premiere</span> </li>
+                <li><span class="skill">html5</span><span class="skill">css3</span><span class="skill">javascript</span></li>
+                <li><span class="skill">Bootstrap 4</span><span class="skill">Ajax</span><span class="skill">webpack</span><span class="skill">Vue.js</span></li>
+                <li><span class="skill">git</span><span class="skill">ai</span><span class="skill">ps</span></li>
             </ul>
         </div>
     </div>
     <div class="content col-lg-12 col-md-12 col-xs-12" align="center">
-    <div class="code-font" style="font-size: 25px">Contact me via email</div>
-    <div align="center" style="color: #999;line-height:40px; font-size: 14px; margin-bottom: 30px">網頁設計、平面設計、logo設計，請與我聯絡</div>
-    <div><a href="mailto:po8867@gmail.com" class="button" style="text-decoration:none"> EMAIL ME </a></div>
+        <div class="code-font" style="font-size: 25px">Contact me via email</div>
+        <div align="center" style="color: #999;line-height:40px; font-size: 14px; margin-bottom: 30px">網頁設計、平面設計、logo設計，請與我聯絡</div>
+        <div><a href="mailto:po8867@gmail.com" class="button" style="text-decoration:none"> EMAIL ME </a></div>
 
     </div>
-<div class="footer col-lg-12 col-md-12 col-xs-12" align="center">Yu-Zu Li © 2016</div>
+
+    <div class="footer col-lg-12 col-md-12 col-xs-12" align="center">Yu-Zu Li © 2016</div>
     <script>
-    $(document).ready(function() {
-        $("#myBtn").click(function() {
-            $("#myModal").modal();
+        $(document).ready(function() {
+            $("#myBtn").click(function() {
+                $("#myModal").modal();
+            });
+            $("#myBtn02").click(function() {
+                $("#myModal02").modal();
+            });
+            $("#myBtn03").click(function() {
+                $("#myModal03").modal();
+            });
+            $("#myBtn04").click(function() {
+                $("#myModal04").modal();
+            });
+            $("#myBtn05").click(function() {
+                $("#myModal05").modal();
+            });
+            $("#myBtn06").click(function() {
+                $("#myModal06").modal();
+            });
         });
-        $("#myBtn02").click(function() {
-            $("#myModal02").modal();
-        });
-        $("#myBtn03").click(function() {
-            $("#myModal03").modal();
-        });
-        $("#myBtn04").click(function() {
-            $("#myModal04").modal();
-        });
-        $("#myBtn05").click(function() {
-            $("#myModal05").modal();
-        });
-        $("#myBtn06").click(function() {
-            $("#myModal06").modal();
-        });
-    });
     </script>
 </body>
 
